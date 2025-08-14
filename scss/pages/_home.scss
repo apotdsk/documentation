@@ -1,0 +1,78 @@
+@use "../variables" as vars;
+
+body {
+  font-size: vars.$font-p-size;
+  font-family: vars.$main-font;
+}
+
+h1 {
+  font-size: vars.$font-h-size;
+}
+
+nav {
+  color: vars.$menu-color;
+  background-color: vars.$main-color;
+
+  h1 {
+    padding-left: vars.$padding;
+    padding-right: vars.$padding;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  img {
+    padding: vars.$padding vars.$padding 0 vars.$padding;
+  }
+
+  a {
+    font-size: vars.$font-a-size;
+    color: vars.$menu-color;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  .links {
+    overflow: hidden;
+    hr {
+      opacity: vars.$hr-opacity;
+      margin: 0;
+    }
+    a {
+      margin-left: vars.$padding;
+      display: inline-block;
+    }
+    .element {
+      padding-top: vars.$padding;
+      padding-bottom: vars.$padding;
+    }
+  }
+  .element:hover {
+    a {
+      font-weight: vars.$hover-weight;
+    }
+    background-color: vars.$hover-color;
+  }
+
+  #el-img {
+    display: none;
+  }
+}
+
+main {
+  padding-left: vars.$padding;
+  padding-top: vars.$padding;
+
+  section {
+    line-height: vars.$line-height;
+
+    h1 {
+      font-size: vars.$font-section-h;
+    }
+
+    .spec-word {
+      background-color: vars.$spec-color;
+    }
+  }
+}

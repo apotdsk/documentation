@@ -4,43 +4,164 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Documentation</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav>
-      <header>
-        <img src="imgs/logo.png" alt="Company's logo" />
-        <h1 id="site-name">CSS Documentation</h1>
-        <div id="hide-links-button"></div>
-      </header>
-      <div class="links">
-        <hr />
-        <p></p>
-        <hr />
-        <!-- +6more similar blocks -->
-      </div>
-    </nav>
-    <main>
-      <section id="intro"></section>
-      <section id="styling-text"></section>
-      <section id="css-layout"></section>
-      <section id="prerequisites"></section>
-      <section id="modules"></section>
-      <section id="css-problems"></section>
-      <section id="working-css">
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
-      <section id="adding-css">
-        <p></p>
-      </section>
-    </main>
+    <div class="page-wrapper">
+      <nav>
+        <header>
+          <img src="../imgs/logo.png" alt="Company's logo" id="nav-img" />
+          <h1 id="site-name">CSS Documentation</h1>
+          <a href="#nav-links" class="nav-button">CSS Documentation</a>
+        </header>
+        <div class="links" id="nav-links">
+          <div class="link-elements">
+            <hr />
+            <div class="element">
+              <a href="#intro">Introduction</a>
+            </div>
+            <hr />
+            <div class="element">
+              <a href="#prerequisites">Prerequisites</a>
+            </div>
+            <hr />
+            <div class="element">
+              <a href="#modules">Modules</a>
+            </div>
+            <hr />
+            <div class="element">
+              <a href="#css-problems">Solving common CSS problems</a>
+            </div>
+            <hr />
+            <div class="element">
+              <a href="#working-css">Working with CSS</a>
+            </div>
+            <hr />
+            <div class="element">
+              <a href="#adding-css">Adding CSS</a>
+            </div>
+            <hr />
+            <div class="element img-el">
+              <a href="#additional-info">See also</a>
+              <img src="../imgs/logo.png" alt="Company's logo" id="el-img" />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <section id="intro">
+          <h1>Introduction</h1>
+          <p>
+            It uses a dictionary of over 200 Latin words, combined with a
+            handful of model sentence structures, to generate Lorem Ipsum which
+            looks reasonable. The generated Lorem Ipsum is therefore always free
+            from repetition, injected humour, or non-characteristic words etc.
+          </p>
+        </section>
+        <section id="styling-text">
+          <h1>Styling Text</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend
+            to repeat predefined
+          </p>
+        </section>
+        <section id="css-layout">
+          <h1>CSS layout</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be
+          </p>
+        </section>
+        <section id="prerequisites">
+          <h1>Prerequisites</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend
+            to repeat predefined
+          </p>
+        </section>
+        <section id="modules">
+          <h1>Modules</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words.
+          </p>
+        </section>
+        <section id="css-problems">
+          <h1>Solving common CSS problems</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words.
+          </p>
+        </section>
+        <section id="working-css">
+          <h1>Working with CSS</h1>
+          <p>
+            It uses a dictionary of over 200 Latin words, combined with a
+            handful of model sentence structures, to generate Lorem Ipsum which
+            looks reasonable. The generated Lorem Ipsum is therefore always free
+            from repetition, injected humour, etc.
+          </p>
+          <ul>
+            <li>font-family</li>
+            <li>color</li>
+            <li>border-bottom</li>
+            <li>font-weight</li>
+            <li>font-size</li>
+            <li>text-decoration</li>
+          </ul>
+        </section>
+        <section id="adding-css">
+          <h1>Adding CSS</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words.
+          </p>
+          <p class="spec-word">
+            &nbsp;&nbsp;&nbsp;&nbsp;&#60;link rel=&#34;stylesheet&#34;
+            href=&#34;styles.css&#34;&#62;
+          </p>
+          <p>
+            This <span class="spec-word">&#60;link&#62;</span> element tell thw
+            browser that we have a stylesheet, using the rel attribute? and the
+            location of that stylesheet as the value of the
+            <span class="spec-word">href</span> attribute.
+          </p>
+        </section>
+        <section id="additional-info">
+          <h1>See Also</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend
+            to repeat predefined
+          </p>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
