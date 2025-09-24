@@ -1,0 +1,57 @@
+@use "../variables" as vars;
+
+@media (width < 800px) {
+  body {
+    font-size: vars.$adaptive-p-font;
+  }
+
+  h1 {
+    font-size: vars.$adaptive-h-font;
+  }
+
+  #nav-img,
+  #site-name {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+    position: absolute;
+
+    #el-img,
+    .nav-button {
+      display: block;
+    }
+    .nav-button {
+      font-size: vars.$adaptive-h-font;
+      font-weight: 700;
+      padding: vars.$padding;
+    }
+    .img-el {
+      display: flex;
+      justify-content: space-between;
+    }
+    a {
+      font-size: vars.$adaptive-a-font;
+      font-weight: 300;
+    }
+    .links {
+      .link-elements {
+        display: none;
+      }
+    }
+    #nav-links:target {
+      .link-elements {
+        display: block;
+      }
+    }
+  }
+
+  main {
+    section {
+      h1 {
+        font-size: vars.$adaptive-section-font;
+      }
+    }
+  }
+}
